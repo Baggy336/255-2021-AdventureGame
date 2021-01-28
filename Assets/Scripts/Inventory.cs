@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
     public bool hasPianoTuner = false;
     public bool hasRoomKey = false;
     public bool hasElectronicFrame = false;
-    public bool hasKeepSake = false;
+    public bool hasKeepsake = false;
 
     private void Start()
     {
