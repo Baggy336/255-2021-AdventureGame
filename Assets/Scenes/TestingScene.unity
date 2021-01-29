@@ -2636,6 +2636,7 @@ GameObject:
   - component: {fileID: 1796470229}
   - component: {fileID: 1796470231}
   - component: {fileID: 1796470230}
+  - component: {fileID: 1796470232}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2713,6 +2714,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796470228}
   m_CullTransparentMesh: 1
+--- !u!114 &1796470232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796470228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05c42967cff0fd43bf6f115cf66020a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imgRoomKey: {fileID: 0}
+  imgPuzzlePiece1: {fileID: 0}
+  imgPuzzlePiece2: {fileID: 0}
+  imgPuzzlePiece3: {fileID: 0}
+  imgCarKey: {fileID: 0}
+  imgKeepsake: {fileID: 0}
+  imgElectronicFrame: {fileID: 0}
+  imgPianoTuner: {fileID: 0}
+  imgWardrobeKey: {fileID: 0}
+  imgBaseball: {fileID: 0}
+  imgDishIngredient: {fileID: 0}
+  imgBatteries: {fileID: 0}
 --- !u!1 &1811504063
 GameObject:
   m_ObjectHideFlags: 0
