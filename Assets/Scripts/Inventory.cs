@@ -24,6 +24,7 @@ public class Inventory : MonoBehaviour
     public bool hasRoomKey = false;
     public bool hasElectronicFrame = false;
     public bool hasKeepsake = false;
+    public bool hasBatteries = false;
 
     private void Start()
     {

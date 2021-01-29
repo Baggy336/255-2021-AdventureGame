@@ -75,6 +75,10 @@ public class RayCast : MonoBehaviour
                 PickupObjectKeepsake keepsake = hit.transform.GetComponent<PickupObjectKeepsake>();
                 if (keepsake != null) keepsake.GrabKeepsake();
 
+                // Pickup the batteries if hit
+                PickupObjectBatteries batteries = hit.transform.GetComponent<PickupObjectBatteries>();
+                if (batteries != null) batteries.GrabBatteries();
+
             }
         }
     }

@@ -16,6 +16,7 @@ public class InventoryPickup : MonoBehaviour
     public Transform imgWardrobeKey; 
     public Transform imgBaseball;
     public Transform imgDishIngredient;
+    public Transform imgBatteries;
     void Update()
     {
         imgRoomKey.gameObject.SetActive(Inventory.main.hasRoomKey);
@@ -29,6 +30,7 @@ public class InventoryPickup : MonoBehaviour
         imgWardrobeKey.gameObject.SetActive(Inventory.main.hasWardrobeKey);
         imgBaseball.gameObject.SetActive(Inventory.main.hasBaseball);
         imgDishIngredient.gameObject.SetActive(Inventory.main.hasDishIngredient);
+        imgBatteries.gameObject.SetActive(Inventory.main.hasBatteries);
     }
 
 }
