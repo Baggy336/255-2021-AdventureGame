@@ -18,6 +18,7 @@ public class InventoryPickup : MonoBehaviour
     public Image imgBaseball;
     public Image imgDishIngredient;
     public Image imgBatteries;
+    public Image crosshair;
     void Update()
     {
         imgRoomKey.gameObject.SetActive(Inventory.main.hasRoomKey);
