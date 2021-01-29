@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryPickup : MonoBehaviour
 {
     // Declare variables to store values
-    public Transform imgRoomKey;
-    public Transform imgPuzzlePiece1;
-    public Transform imgPuzzlePiece2;
-    public Transform imgPuzzlePiece3;
-    public Transform imgCarKey;
-    public Transform imgKeepsake;
-    public Transform imgElectronicFrame;
-    public Transform imgPianoTuner;
-    public Transform imgWardrobeKey; 
-    public Transform imgBaseball;
-    public Transform imgDishIngredient;
-    public Transform imgBatteries;
+    public Image imgRoomKey;
+    public Image imgPuzzlePiece1;
+    public Image imgPuzzlePiece2;
+    public Image imgPuzzlePiece3;
+    public Image imgCarKey;
+    public Image imgKeepsake;
+    public Image imgElectronicFrame;
+    public Image imgPianoTuner;
+    public Image imgWardrobeKey; 
+    public Image imgBaseball;
+    public Image imgDishIngredient;
+    public Image imgBatteries;
     void Update()
     {
         imgRoomKey.gameObject.SetActive(Inventory.main.hasRoomKey);
