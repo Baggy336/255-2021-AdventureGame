@@ -13,6 +13,8 @@ public class PickupObjectScript : MonoBehaviour
     private float animPlayheadTime = 0;
     public float percent = 0;
     private bool isAnimPlaying = false;
+    public UIControl uiControl;
+
 
     public AnimationCurve animationCurve;
 
@@ -29,6 +31,7 @@ public class PickupObjectScript : MonoBehaviour
         
         isAnimPlaying = true;
         animPlayheadTime = 0;
+        
         
     }
     

@@ -22,6 +22,8 @@ public class UIControl : MonoBehaviour
     public Image inventorySpaceTwo;
     public Image inventorySpaceThree;
     public Image inventorySpaceFour;
+    public Image textBox;
+    public Text text;
 
 
     void Start()
@@ -58,6 +60,9 @@ public class UIControl : MonoBehaviour
             inventorySpaceTwo.color = new Color(255, 255, 255, -(currentAlpha - 1));
             inventorySpaceThree.color = new Color(255, 255, 255, -(currentAlpha - 1));
             inventorySpaceFour.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            textBox.color = new Color(0.5f, 0.5f, 0.5f, -(currentAlpha - 1));
+            text.color = new Color(1, 1, 1, - (currentAlpha - 1));
+
         }
     }
     public void FadeIn()
