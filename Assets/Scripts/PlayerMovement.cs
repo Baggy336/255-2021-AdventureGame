@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     // TODO: Add Jumping
 
     // Add variables to store movement speed, and how fast the player can look around.
-    public float speed = 2;
+    public float moveSpeed = 4;
     public float sensitivityX = 50;
     public float sensitivityY = -50;
 
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     float cameraAngle = 0;
 
     // Store the character as a pawn.
-    private CharacterController pawn;
+    public CharacterController pawn;
 
     private void Start()
     {
@@ -44,7 +44,11 @@ public class PlayerMovement : MonoBehaviour
         float h = Input.GetAxis("Horizontal"); // A + D left and right
 
         // Use the player's current location to move them by speed on a vector.
-        transform.position += (transform.right * h + transform.forward * v) * speed * Time.deltaTime;
+        //transform.position += (transform.right * h + transform.forward * v) * speed * Time.deltaTime;
+        Vector3 speed = (transform.right * h + transform.forward * v) * moveSpeed;
+        pawn.SimpleMove(speed);
+
+
 
         // Move the player along the vector.
        
