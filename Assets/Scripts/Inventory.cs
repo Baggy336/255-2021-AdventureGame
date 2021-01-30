@@ -25,6 +25,7 @@ public class Inventory : MonoBehaviour
     public bool hasElectronicFrame = false;
     public bool hasKeepsake = false;
     public bool hasBatteries = false;
+    public bool hasScript = false;
 
     private void Start()
     {

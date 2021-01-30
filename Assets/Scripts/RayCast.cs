@@ -79,6 +79,18 @@ public class RayCast : MonoBehaviour
                 PickupObjectBatteries batteries = hit.transform.GetComponent<PickupObjectBatteries>();
                 if (batteries != null) batteries.GrabBatteries();
 
+                // Pickup the script if hit
+                PickupObjectScript script = hit.transform.GetComponent<PickupObjectScript>();
+                if (script != null)
+                {
+                    script.GrabScript();
+                    
+                }
+
+                // Click the certificate
+                PickupObjectCertificate certificate = hit.transform.GetComponent<PickupObjectCertificate>();
+                if (certificate != null) certificate.GrabCertificate();
+
             }
         }
     }
