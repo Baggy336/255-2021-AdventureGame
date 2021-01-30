@@ -17,6 +17,11 @@ public class UIControl : MonoBehaviour
     private bool isFadeIn = false;
 
     public Image blackOutSquare;
+    public Image crosshair;
+    public Image inventorySpaceOne;
+    public Image inventorySpaceTwo;
+    public Image inventorySpaceThree;
+    public Image inventorySpaceFour;
 
 
     void Start()
@@ -47,7 +52,12 @@ public class UIControl : MonoBehaviour
                 }
             }
             
-            blackOutSquare.color = new Color(0, 0, 0, currentAlpha); 
+            blackOutSquare.color = new Color(0, 0, 0, currentAlpha);
+            crosshair.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            inventorySpaceOne.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            inventorySpaceTwo.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            inventorySpaceThree.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            inventorySpaceFour.color = new Color(255, 255, 255, -(currentAlpha - 1));
         }
     }
     public void FadeIn()
