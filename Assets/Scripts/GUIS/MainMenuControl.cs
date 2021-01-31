@@ -30,6 +30,7 @@ public class MainMenuControl : MonoBehaviour
     public void AboutButtonPressed()
     {
         // Bring up the about page
+        SceneManager.LoadScene("AboutPage");
     }
     public void QuitButtonPressed()
     {

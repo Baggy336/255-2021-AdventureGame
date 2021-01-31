@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameFlow/House2.unity
     guid: fcc4f3bb44b16f34f9a6beca734a6292
+  - enabled: 1
+    path: Assets/Scenes/GameFlow/Living Room Dance.unity
+    guid: 8b92eed7312dc5942a5ee3cbeb1d0843
+  - enabled: 1
+    path: Assets/Scenes/GameFlow/AboutPage.unity
+    guid: 0ea72b9bf89e94c4881198fb366eea3d
   m_configObjects: {}

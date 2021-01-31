@@ -24,7 +24,7 @@ public class PickupObjectFrame : MonoBehaviour
         if (Inventory.main.hasElectronicFrame && !uiControl.isCurrentlyFading)
         {
 
-            SceneManager.LoadScene("Living Room Dance");
+            SceneManager.LoadScene("AboutPage");
 
         }
 
