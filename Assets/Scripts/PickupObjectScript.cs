@@ -31,7 +31,7 @@ public class PickupObjectScript : MonoBehaviour
         // Add to timesPickedUp        
                
         clickedScript = true;
-        showScript.ShowText();
+        showScript.ShowTextScript();
         isAnimPlaying = true;
         animPlayheadTime = 0;
         

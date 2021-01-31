@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class DisplayText : MonoBehaviour
 {
     public PickupObjectScript script;
-    
+    public PickupDogTags tags;
+    public GiveDogTags giveTags;
     
     public UIControl uiText;
 
@@ -38,7 +39,7 @@ public class DisplayText : MonoBehaviour
         }
 
     }
-    public void ShowText()
+    public void ShowTextScript()
     {
         if (script.clickedScript && !previousText.enabled)
         {
@@ -46,7 +47,22 @@ public class DisplayText : MonoBehaviour
             myText.enabled = true;
             
         }
-
-
+        
+    }
+    public void ShowTextGrabTags()
+    {
+        if (tags.clickedTags && !previousText.enabled)
+        {
+            myText.enabled = true;
+        }
+    }
+    public void ShowTextClickBody()
+    {
+        if (!giveTags.hasTags && !previousText.enabled) myText.enabled = true;
+        
+    }
+    public void ShowTextTagsOnBody()
+    {
+        if (giveTags.hasTags && !previousText.enabled) myText.enabled = true;
     }
 }
