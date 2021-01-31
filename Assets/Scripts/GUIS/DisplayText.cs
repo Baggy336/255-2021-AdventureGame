@@ -14,6 +14,9 @@ public class DisplayText : MonoBehaviour
     public PickupObjectSoup soup;
     public PickupBaseballAgain ball2;
     public ClickedOnDad throwTo;
+    public PickupLivingRoomBaseball livingRoomBall;
+    public DoorNeedsKey lockedDoor;
+    
     
     public UIControl uiText;
 
@@ -95,4 +98,13 @@ public class DisplayText : MonoBehaviour
     {
         if (throwTo.clickedDad && !previousText.enabled) myText.enabled = true;
     }
+    public void ShowBaseball3Text()
+    {
+        if (livingRoomBall.clickedBall && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextLockedDoor()
+    {
+        if (Inventory.main.hasRoomKey != true && !previousText.enabled) myText.enabled = true;
+    }
+    
 }

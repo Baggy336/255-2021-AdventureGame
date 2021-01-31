@@ -116,6 +116,12 @@ public class RayCast : MonoBehaviour
                 ClickedOnDad dad = hit.transform.GetComponent<ClickedOnDad>();
                 if (dad != null) dad.ThrowBall();
 
+                DoorNeedsKey locked = hit.transform.GetComponentInParent<DoorNeedsKey>();
+                if (locked != null) locked.PlayerInteract(transform.parent.position);
+
+                PickupLivingRoomBaseball ball3 = hit.transform.GetComponent<PickupLivingRoomBaseball>();
+                if (ball3 != null) ball3.LivingRoomBall();
+
 
 
             }
