@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameFlow/OpeningScene.unity
     guid: 30af76417f977b342ae525fac4afef53
   - enabled: 1
-    path: Assets/Scenes/GameFlow/Area1.unity
+    path: Assets/Scenes/GameFlow/Hospital.unity
     guid: 92ee84703b07e6e469534760ee941294
   - enabled: 1
     path: Assets/Scenes/GameFlow/Area2.unity
