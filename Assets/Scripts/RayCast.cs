@@ -103,6 +103,9 @@ public class RayCast : MonoBehaviour
                 GiveDogTags give = hit.transform.GetComponent<GiveDogTags>();
                 if (give != null) give.GiveTags();
 
+                PickupKeysSecond key2 = hit.transform.GetComponent<PickupKeysSecond>();
+                if (key2 != null) key2.GrabSecondCarKey();
+
 
 
             }
