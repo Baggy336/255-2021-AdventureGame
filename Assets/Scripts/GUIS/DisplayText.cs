@@ -8,6 +8,9 @@ public class DisplayText : MonoBehaviour
     public PickupObjectScript script;
     public PickupDogTags tags;
     public GiveDogTags giveTags;
+    public PickupObjectCookingIngredient lemon;
+    public PickupKeysSecond secondKey;
+    public PickupObjectBaseball baseball;
     
     public UIControl uiText;
 
@@ -64,5 +67,17 @@ public class DisplayText : MonoBehaviour
     public void ShowTextTagsOnBody()
     {
         if (giveTags.hasTags && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextLemon()
+    {
+        if (lemon.grabLemon && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextSecondCarKey()
+    {
+        if (secondKey.hasCarKey && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextBaseball()
+    {
+        if (baseball.clickedBaseball && !previousText.enabled) myText.enabled = true;
     }
 }
