@@ -177,87 +177,16 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 8687931398947220636}
   previousText: {fileID: 8687931398947220636}
   nextText: {fileID: 8687931398947220636}
   introText: {fileID: 1527187481190733324}
   textTimer: 5
---- !u!1 &1158213219847906400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 494533886870656871}
-  - component: {fileID: 3901068495803404960}
-  - component: {fileID: 3573215146845200324}
-  m_Layer: 5
-  m_Name: InventorySpaceFour
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &494533886870656871
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158213219847906400}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49897838, y: 0.49897838, z: 0.49897838}
-  m_Children: []
-  m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -519, y: -13}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3901068495803404960
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158213219847906400}
-  m_CullTransparentMesh: 1
---- !u!114 &3573215146845200324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158213219847906400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1681262463809198060
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,87 +289,16 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 8687931398947220636}
   previousText: {fileID: 8687931398947220636}
   nextText: {fileID: 8687931398947220636}
   introText: {fileID: 745912295413477688}
   textTimer: 5
---- !u!1 &3288654403986588590
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5094016612667103687}
-  - component: {fileID: 381450360943408225}
-  - component: {fileID: 4983947624074156214}
-  m_Layer: 5
-  m_Name: InventorySpaceThree
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &5094016612667103687
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3288654403986588590}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49897838, y: 0.49897838, z: 0.49897838}
-  m_Children: []
-  m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -519, y: 46}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &381450360943408225
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3288654403986588590}
-  m_CullTransparentMesh: 1
---- !u!114 &4983947624074156214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3288654403986588590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3421923257414290436
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +401,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 3318943098425934069}
   previousText: {fileID: 7382262095421728931}
@@ -651,6 +513,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 901719105590962917}
   previousText: {fileID: 8687931398947220636}
@@ -756,6 +622,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 8687931398947220636}
   previousText: {fileID: 8687931398947220636}
@@ -863,6 +733,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 7382262095421728931}
   previousText: {fileID: 8687931398947220636}
@@ -911,7 +785,7 @@ RectTransform:
   - {fileID: 1989038234699758743}
   - {fileID: 71825377186255335}
   m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1056,6 +930,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 8961373729626985300}
   previousText: {fileID: 8687931398947220636}
@@ -1161,6 +1039,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 8687931398947220636}
   previousText: {fileID: 8687931398947220636}
@@ -1266,162 +1148,16 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 8687931398947220636}
   previousText: {fileID: 8687931398947220636}
   nextText: {fileID: 8687931398947220636}
   introText: {fileID: 8687931398947220636}
   textTimer: 5
---- !u!1 &7263341311990338548
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6168440756438926892}
-  - component: {fileID: 3011463928273501570}
-  - component: {fileID: 4764546950827497660}
-  m_Layer: 5
-  m_Name: InventorySpaceTwo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &6168440756438926892
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7263341311990338548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49897838, y: 0.49897838, z: 0.49897838}
-  m_Children: []
-  m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -519, y: 104}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3011463928273501570
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7263341311990338548}
-  m_CullTransparentMesh: 1
---- !u!114 &4764546950827497660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7263341311990338548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &7539128043002734493
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 617176252408589355}
-  - component: {fileID: 8267740814057359986}
-  - component: {fileID: 4704574412934496822}
-  m_Layer: 5
-  m_Name: InventorySpaceOne
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &617176252408589355
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7539128043002734493}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49897838, y: 0.49897838, z: 0.49897838}
-  m_Children: []
-  m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -519, y: 161}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8267740814057359986
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7539128043002734493}
-  m_CullTransparentMesh: 1
---- !u!114 &4704574412934496822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7539128043002734493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7549116209677839421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,10 +1191,6 @@ RectTransform:
   m_Children:
   - {fileID: 7549116210972266175}
   - {fileID: 1460648568600988455}
-  - {fileID: 617176252408589355}
-  - {fileID: 6168440756438926892}
-  - {fileID: 5094016612667103687}
-  - {fileID: 494533886870656871}
   - {fileID: 887833949482483290}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1544,10 +1276,10 @@ MonoBehaviour:
   percentPerSecond: 0.5
   blackOutSquare: {fileID: 7549116210972266168}
   crosshair: {fileID: 2970889398491537945}
-  inventorySpaceOne: {fileID: 4704574412934496822}
-  inventorySpaceTwo: {fileID: 4764546950827497660}
-  inventorySpaceThree: {fileID: 4983947624074156214}
-  inventorySpaceFour: {fileID: 3573215146845200324}
+  inventorySpaceOne: {fileID: 0}
+  inventorySpaceTwo: {fileID: 0}
+  inventorySpaceThree: {fileID: 0}
+  inventorySpaceFour: {fileID: 0}
   textBox: {fileID: 938216893109048607}
   text: {fileID: 3766135045495721748}
   text1: {fileID: 3766135045495721748}
@@ -1728,6 +1460,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 5961105798599193905}
   previousText: {fileID: 901719105590962917}
@@ -1833,6 +1569,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 8687931398947220636}
   previousText: {fileID: 8687931398947220636}
@@ -1940,6 +1680,10 @@ MonoBehaviour:
   secondKey: {fileID: 0}
   baseball: {fileID: 0}
   soup: {fileID: 0}
+  ball2: {fileID: 0}
+  throwTo: {fileID: 0}
+  livingRoomBall: {fileID: 0}
+  lockedDoor: {fileID: 0}
   uiText: {fileID: 7549116209677839422}
   myText: {fileID: 1227808419359810919}
   previousText: {fileID: 8687931398947220636}
