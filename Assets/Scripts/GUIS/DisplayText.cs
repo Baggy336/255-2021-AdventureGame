@@ -11,6 +11,9 @@ public class DisplayText : MonoBehaviour
     public PickupObjectCookingIngredient lemon;
     public PickupKeysSecond secondKey;
     public PickupObjectBaseball baseball;
+    public PickupObjectSoup soup;
+    public PickupBaseballAgain ball2;
+    public ClickedOnDad throwTo;
     
     public UIControl uiText;
 
@@ -79,5 +82,17 @@ public class DisplayText : MonoBehaviour
     public void ShowTextBaseball()
     {
         if (baseball.clickedBaseball && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextSoup()
+    {
+        if (Inventory.main.hasSoup && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowBaseball2Text()
+    {
+        if (ball2.clickedBall && !previousText.enabled) myText.enabled = true;
+    }
+    public void ThrowBallToDad()
+    {
+        if (throwTo.clickedDad && !previousText.enabled) myText.enabled = true;
     }
 }

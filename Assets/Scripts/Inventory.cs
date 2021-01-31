@@ -29,6 +29,7 @@ public class Inventory : MonoBehaviour
     public bool hasDogTags = false;
     public bool hasSecondKey = false;
     public bool hasSoup = false;
+    public bool hasBaseball2 = false;
 
     private void Start()
     {

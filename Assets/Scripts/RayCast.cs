@@ -110,6 +110,12 @@ public class RayCast : MonoBehaviour
                 PickupKeysSecond key2 = hit.transform.GetComponent<PickupKeysSecond>();
                 if (key2 != null) key2.GrabSecondCarKey();
 
+                PickupBaseballAgain ball2 = hit.transform.GetComponent<PickupBaseballAgain>();
+                if (ball2 != null) ball2.GrabBaseballAgain();
+
+                ClickedOnDad dad = hit.transform.GetComponent<ClickedOnDad>();
+                if (dad != null) dad.ThrowBall();
+
 
 
             }
