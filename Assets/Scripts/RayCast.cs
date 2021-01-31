@@ -91,6 +91,16 @@ public class RayCast : MonoBehaviour
                 PickupObjectCertificate certificate = hit.transform.GetComponent<PickupObjectCertificate>();
                 if (certificate != null) certificate.GrabCertificate();
 
+                // Click the dog tags
+                PickupDogTags tags = hit.transform.GetComponent<PickupDogTags>();
+                if (tags != null) tags.GrabDogTags();
+
+                // Give dog tags
+                GiveDogTags give = hit.transform.GetComponent<GiveDogTags>();
+                if (give != null) give.GiveTags();
+
+
+
             }
         }
     }

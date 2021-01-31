@@ -12,6 +12,7 @@ public class PickupObjectCertificate : MonoBehaviour
     public UIControl uiControl;
     
 
+
     public void Start()
     {
         
@@ -20,6 +21,8 @@ public class PickupObjectCertificate : MonoBehaviour
     public void GrabCertificate()
     {
         clickedCertificate = true;
+        
+        
         // Fade to black
         uiControl.FadeIn();
         
@@ -30,7 +33,7 @@ public class PickupObjectCertificate : MonoBehaviour
         if (clickedCertificate && !uiControl.isCurrentlyFading)
         {
 
-            SceneManager.LoadScene("Area1");
+            SceneManager.LoadScene("Hospital");
             
         }
 

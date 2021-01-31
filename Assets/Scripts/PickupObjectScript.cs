@@ -29,10 +29,14 @@ public class PickupObjectScript : MonoBehaviour
     public void GrabScript()
     {
         // Add to timesPickedUp        
+               
         clickedScript = true;
         showScript.ShowText();
         isAnimPlaying = true;
-        animPlayheadTime = 0;       
+        animPlayheadTime = 0;
+        
+       
+               
     }
     
     void Update()

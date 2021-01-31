@@ -24,6 +24,7 @@ public class UIControl : MonoBehaviour
     public Image inventorySpaceFour;
     public Image textBox;
     public Text text;
+    public Text text1;
 
 
     void Start()
