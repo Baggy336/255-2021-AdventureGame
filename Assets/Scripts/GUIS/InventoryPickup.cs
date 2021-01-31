@@ -19,6 +19,7 @@ public class InventoryPickup : MonoBehaviour
     public Image imgDishIngredient;
     public Image imgBatteries;
     public Image crosshair;
+    public Image imgSoup;
     void Update()
     {
         imgRoomKey.gameObject.SetActive(Inventory.main.hasRoomKey);
@@ -33,6 +34,7 @@ public class InventoryPickup : MonoBehaviour
         imgBaseball.gameObject.SetActive(Inventory.main.hasBaseball);
         imgDishIngredient.gameObject.SetActive(Inventory.main.hasDishIngredient);
         imgBatteries.gameObject.SetActive(Inventory.main.hasBatteries);
+        imgSoup.gameObject.SetActive(Inventory.main.hasSoup);
     }
 
 }

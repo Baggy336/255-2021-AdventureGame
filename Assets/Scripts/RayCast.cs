@@ -51,6 +51,10 @@ public class RayCast : MonoBehaviour
                 PickupObjectPuzzlePiece3 puzzle3 = hit.transform.GetComponent<PickupObjectPuzzlePiece3>();
                 if (puzzle3 != null) puzzle3.GrabPiece3();
 
+                // Pickup the soup if hit
+                PickupObjectSoup soup = hit.transform.GetComponent<PickupObjectSoup>();
+                if (soup != null) soup.GrabSoup();
+
                 // Pickup the baseball if hit
                 PickupObjectBaseball ball = hit.transform.GetComponent<PickupObjectBaseball>();
                 if (ball != null) ball.GrabBaseball();

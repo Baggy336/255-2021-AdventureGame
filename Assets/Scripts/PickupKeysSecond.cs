@@ -11,15 +11,16 @@ public class PickupKeysSecond : MonoBehaviour
     public bool canBeClicked = false;
     public void GrabSecondCarKey()
     {
-        
-        
+
+        if (canBeClicked)
+        {
             hasCarKey = true;
             // Tell the inventory the player has the car key
             script.ShowTextSecondCarKey();
-            
+
             Inventory.main.hasSecondKey = true;
             //Destroy(gameObject);
-
+        }
         
         
     }
