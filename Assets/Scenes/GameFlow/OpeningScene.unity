@@ -2567,6 +2567,17 @@ Transform:
   m_Father: {fileID: 997989756}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &678468105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 901719105590962917, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+  m_PrefabInstance: {fileID: 7549116209576708436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &698054734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,6 +2768,17 @@ Transform:
   m_Father: {fileID: 35740798}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &867165912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+  m_PrefabInstance: {fileID: 7549116209576708436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &939440579
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,6 +4708,9 @@ MonoBehaviour:
   targetPos: {fileID: 1410238110}
   animLength: 2
   percent: 0
+  clickedScript: 0
+  uiControl: {fileID: 168502634}
+  showScript: {fileID: 867165912}
   animationCurve:
     serializedVersion: 2
     m_Curve:
@@ -7158,6 +7183,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 901719105590962917, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: m_Text
+      value: 'Welcome to the game.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: myText
+      value: 
+      objectReference: {fileID: 678468105}
+    - target: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1364486525}
+    - target: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: uiText
+      value: 
+      objectReference: {fileID: 168502634}
     - target: {fileID: 7549116209677839418, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0

@@ -5,17 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class PickupObjectScript : MonoBehaviour
 {
-    
     public int timesPickedUp = 0;
     public GameObject currentPos;
     public GameObject targetPos;
     public float animLength = 2;
     private float animPlayheadTime = 0;
     public float percent = 0;
+
+    public bool clickedScript = false;
     private bool isAnimPlaying = false;
+
     public UIControl uiControl;
-
-
+    public DisplayText showScript;
     public AnimationCurve animationCurve;
 
     public float getCurrentPercent
@@ -28,11 +29,10 @@ public class PickupObjectScript : MonoBehaviour
     public void GrabScript()
     {
         // Add to timesPickedUp        
-        
+        clickedScript = true;
+        showScript.ShowText();
         isAnimPlaying = true;
-        animPlayheadTime = 0;
-        
-        
+        animPlayheadTime = 0;       
     }
     
     void Update()
@@ -62,4 +62,5 @@ public class PickupObjectScript : MonoBehaviour
     {
         transform.position = AnimMath.Lerp(currentPos.transform.position, targetPos.transform.position, p);
     }
+    
 }
