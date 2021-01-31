@@ -31,6 +31,10 @@ public class RayCast : MonoBehaviour
                 DoorOpen door = hit.transform.GetComponentInParent<DoorOpen>();
                 if (door != null) door.PlayerInteract(transform.parent.position);
 
+                // Open the cabinet if hit
+                CabinetOpen cabinet = hit.transform.GetComponentInParent<CabinetOpen>();
+                if (cabinet != null) cabinet.PlayerInteract(transform.parent.position);
+
                 // Pickup the room key if hit
                 PickupObjectRoomKey roomKey = hit.transform.GetComponent<PickupObjectRoomKey>();
                 if (roomKey != null) roomKey.GrabObject();
