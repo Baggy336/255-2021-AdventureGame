@@ -11,6 +11,7 @@ public class PickupObjectScript : MonoBehaviour
     public float animLength = 2;
     private float animPlayheadTime = 0;
     public float percent = 0;
+    public List<string> captions;
 
     public bool clickedScript = false;
     private bool isAnimPlaying = false;
@@ -31,7 +32,8 @@ public class PickupObjectScript : MonoBehaviour
         // Add to timesPickedUp        
                
         clickedScript = true;
-        showScript.ShowTextScript();
+        //showScript.ShowTextScript();
+        DialogueControl.main.AddCaption(captions);
         isAnimPlaying = true;
         animPlayheadTime = 0;
         
