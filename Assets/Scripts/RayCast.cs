@@ -122,7 +122,8 @@ public class RayCast : MonoBehaviour
                 PickupLivingRoomBaseball ball3 = hit.transform.GetComponent<PickupLivingRoomBaseball>();
                 if (ball3 != null) ball3.LivingRoomBall();
 
-
+                InteractWithDrawer drawer = hit.transform.GetComponentInChildren<InteractWithDrawer>();
+                if (drawer != null) drawer.PlayerInteract(transform.parent.position);
 
             }
         }

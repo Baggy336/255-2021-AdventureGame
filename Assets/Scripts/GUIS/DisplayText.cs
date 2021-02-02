@@ -16,6 +16,7 @@ public class DisplayText : MonoBehaviour
     public ClickedOnDad throwTo;
     public PickupLivingRoomBaseball livingRoomBall;
     public DoorNeedsKey lockedDoor;
+    public PickupObjectWardrobeKey wardrobe;
     
     
     public UIControl uiText;
@@ -107,4 +108,8 @@ public class DisplayText : MonoBehaviour
         if (Inventory.main.hasRoomKey != true && !previousText.enabled) myText.enabled = true;
     }
     
+    public void ShowTextWardrobeKey()
+    {
+        if (Inventory.main.hasWardrobeKey && !previousText.enabled) myText.enabled = true;
+    }
 }

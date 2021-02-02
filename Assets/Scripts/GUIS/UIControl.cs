@@ -57,10 +57,10 @@ public class UIControl : MonoBehaviour
             
             blackOutSquare.color = new Color(0, 0, 0, currentAlpha);
             crosshair.color = new Color(255, 255, 255, -(currentAlpha - 1));
-            inventorySpaceOne.color = new Color(255, 255, 255, -(currentAlpha - 1));
-            inventorySpaceTwo.color = new Color(255, 255, 255, -(currentAlpha - 1));
-            inventorySpaceThree.color = new Color(255, 255, 255, -(currentAlpha - 1));
-            inventorySpaceFour.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            //inventorySpaceOne.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            //inventorySpaceTwo.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            //inventorySpaceThree.color = new Color(255, 255, 255, -(currentAlpha - 1));
+            //inventorySpaceFour.color = new Color(255, 255, 255, -(currentAlpha - 1));
             textBox.color = new Color(0.5f, 0.5f, 0.5f, -(currentAlpha - 1));
             text.color = new Color(1, 1, 1, - (currentAlpha - 1));
 
