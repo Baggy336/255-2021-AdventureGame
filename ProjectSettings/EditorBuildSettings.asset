@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameFlow/AboutPage.unity
     guid: 0ea72b9bf89e94c4881198fb366eea3d
+  - enabled: 1
+    path: Assets/Scenes/GameFlow/LivingRoom2.unity
+    guid: cf7cc7a8926a49345b3ceb80e4dbe904
   m_configObjects: {}

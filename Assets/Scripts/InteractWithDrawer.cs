@@ -7,50 +7,67 @@ public class InteractWithDrawer : MonoBehaviour
     public bool isDrawerLocked = true;
     public bool isAnimPlaying = false;
     public bool isClosed = true;
-    public float animLength = .5f;
-    private float animTimer = 0;
+    public float animLength = 2;
+    public bool hasDrawerBeenOpened = false;
+    public float timesOpened = 0;
+    
+    private float animPlayheadTime = 0;
+    public float percent = 0;
+
+    public float getCurrentPercent
+    {
+        get
+        {
+            return animPlayheadTime / animLength;
+        }
+    }
     
     public GameObject currentPos;
     public GameObject targetPos;
-    
+    public AnimationCurve animationCurve;
     public Transform slidePiece;
+    public DisplayText script;
 
+
+    public void ClickDrawer()
+    {
+        isAnimPlaying = true;
+        animPlayheadTime = 0;
+        if (isDrawerLocked) script.ShowTextDrawerLocked();
+        
+    }
     private void Update()
     {
-        if (isAnimPlaying)
-        {
-            if (!isClosed) // If the door is not closed, play the animation by deltaTime
-                animTimer += Time.deltaTime;
-            else // Otherwise, play the animation backwards by deltaTime
-                animTimer -= Time.deltaTime;
+        
 
-            float percent = animTimer / animLength;
+        if (Inventory.main.hasWardrobeKey) isDrawerLocked = false;
+            if (isAnimPlaying && isDrawerLocked != true && !hasDrawerBeenOpened)
+            {
+                animPlayheadTime += Time.deltaTime;
 
-            if (percent < 0)
-            {
-                percent = 0;
-                isAnimPlaying = false;
-            }
-            if (percent > 1)
-            {
-                percent = 1;
-                isAnimPlaying = false;
-            }
-            //slidePiece.localPosition = AnimMath.Slide(currentPos.transform.position, targetPos.transform.position, .5f);
-            
+                percent = getCurrentPercent;
+
+                percent = Mathf.Clamp(percent, 0, 1);
+
+                float p = animationCurve.Evaluate(percent);
+
+                Lerpy(p);
+
+                if (percent > 1) isAnimPlaying = false;
+                
+                if (percent == 1) hasDrawerBeenOpened = true;
+
         }
         
+        
+       
     }
-    public void PlayerInteract(Vector3 position)
+    public void OnValidate()
     {
-        if (isAnimPlaying) return;
-
-        
-
-        
-        isAnimPlaying = true;
-        if (isClosed) animTimer = animLength;
-        else animTimer = 0;
+        Lerpy(percent);
     }
-    
+    public void Lerpy(float p)
+    {
+        transform.position = AnimMath.Lerp(currentPos.transform.position, targetPos.transform.position, p);
+    }  
 }

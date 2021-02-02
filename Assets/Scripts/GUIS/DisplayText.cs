@@ -17,7 +17,9 @@ public class DisplayText : MonoBehaviour
     public PickupLivingRoomBaseball livingRoomBall;
     public DoorNeedsKey lockedDoor;
     public PickupObjectWardrobeKey wardrobe;
-    
+    public InteractWithDrawer drawer;
+    public PickupObjectBatteries batteries;
+    public InteractWithRadio radio;
     
     public UIControl uiText;
 
@@ -111,5 +113,17 @@ public class DisplayText : MonoBehaviour
     public void ShowTextWardrobeKey()
     {
         if (Inventory.main.hasWardrobeKey && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextDrawerLocked()
+    {
+        if (drawer.isDrawerLocked && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextBatteries()
+    {
+        if (Inventory.main.hasBatteries && !previousText.enabled) myText.enabled = true;
+    }
+    public void ShowTextRadio()
+    {
+        if (Inventory.main.hasBatteries && !previousText.enabled) myText.enabled = true;
     }
 }

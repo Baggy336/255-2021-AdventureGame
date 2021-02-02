@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class InteractWithRadio : MonoBehaviour
 {
-    public bool hasBattery = false;
+    public PickupObjectPuzzlePiece1 puzzle;
     public UIControl uiControl;
     public DisplayText script;
 
+    public void InteractRadio()
+    {
+        if (Inventory.main.hasBatteries) script.ShowTextRadio();
+        puzzle.canBeClicked = true;
+    }
 }
