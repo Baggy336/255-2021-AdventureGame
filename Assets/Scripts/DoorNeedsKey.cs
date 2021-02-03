@@ -7,6 +7,7 @@ public class DoorNeedsKey : MonoBehaviour
     // Declare variables to store information
     
     public Transform rotatePiece;
+    public List<string> captions;
     public float animLength = .5f;
     private float animTimer = 0;
     private float doorAngle = 0;
@@ -41,6 +42,7 @@ public class DoorNeedsKey : MonoBehaviour
     }
     public void PlayerInteract(Vector3 position)
     {
+        if (Inventory.main.hasRoomKey == false) DialogueControl.main.AddCaption(captions);
         if (Inventory.main.hasRoomKey)
         {
             // If the animation is playing already, return nothing
@@ -66,9 +68,8 @@ public class DoorNeedsKey : MonoBehaviour
             if (isClosed) animTimer = animLength;
             else animTimer = 0;
         }
-        
-            
-        
-        
+          
     }
+   
+    
 }

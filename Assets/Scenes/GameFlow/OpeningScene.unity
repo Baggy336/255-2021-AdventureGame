@@ -3201,12 +3201,11 @@ MonoBehaviour:
   animLength: 2
   percent: 0
   captions:
-  - This is Caption One of the Second Script
-  - This is Caption Two of the Second Script
-  - This is Caption Three of the Second Script
+  - '"Sorry everyone, I had written some things down..."'
+  - '"My notes just seem to be a bit scrambled here."'
+  - How the hell did my dad's death certificate get here? I need to deal with that.
   clickedScript: 0
   uiControl: {fileID: 168502634}
-  showScript: {fileID: 0}
   animationCurve:
     serializedVersion: 2
     m_Curve:
@@ -5490,14 +5489,12 @@ MonoBehaviour:
   animLength: 2
   percent: 0
   captions:
-  - This is caption One
-  - This is caption Two
-  - This is caption Three
-  - This is caption Four
-  - This is caption Five
+  - '*Ahem* "Thank you everybody... for well... being here today."'
+  - '"I wanted to... well... I wanted to talk about my father."'
+  - '"My dad was... I mean..."'
+  - Arghh why can't I think of anything! Just stick to the notes!
   clickedScript: 0
   uiControl: {fileID: 168502634}
-  showScript: {fileID: 0}
   animationCurve:
     serializedVersion: 2
     m_Curve:

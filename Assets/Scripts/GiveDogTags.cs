@@ -8,14 +8,15 @@ public class GiveDogTags : MonoBehaviour
     public bool recievedTags = false;
     public PickupObjectCarKey keys;
     public PickupDogTags tags;
-    public DisplayText bodyScript;
-    public DisplayText bodyScript2;
+    
+    public List<string> captions;
+    public List<string> captions2;
 
     public void GiveTags()
     {
         if(hasTags)
         {
-            bodyScript.ShowTextTagsOnBody();
+            DialogueControl.main.AddCaption(captions);
             recievedTags = true;
             keys.canBeClicked = true;
 
@@ -23,7 +24,7 @@ public class GiveDogTags : MonoBehaviour
         else
         {
             tags.hasTalkedToDad = true;
-            bodyScript2.ShowTextClickBody();
+            DialogueControl.main.AddCaption(captions2);
         }
         
     }

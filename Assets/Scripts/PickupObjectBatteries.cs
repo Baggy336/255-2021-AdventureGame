@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PickupObjectBatteries : MonoBehaviour
 {
-    public DisplayText script;
+    public List<string> captions;
     
     public void GrabBatteries()
     {
         // Tell the inventory the player has the batteries
         Inventory.main.hasBatteries = true;
-        
-        script.ShowTextBatteries();
+
+        DialogueControl.main.AddCaption(captions);
         Destroy(gameObject);
     }
 }

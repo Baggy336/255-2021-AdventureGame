@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickupBaseballAgain : MonoBehaviour
 {
-    public DisplayText script;
+    public List<string> captions;
     public UIControl uiControl;
     public bool clickedBall = false;
     
@@ -13,7 +13,7 @@ public class PickupBaseballAgain : MonoBehaviour
         // Tell the inventory the player has the baseball
         clickedBall = true;
         Inventory.main.hasBaseball2 = true;
-        script.ShowBaseball2Text();
+        DialogueControl.main.AddCaption(captions);
         Destroy(gameObject);
 
 

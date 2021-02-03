@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickupLivingRoomBaseball : MonoBehaviour
 {
-    public DisplayText script;
+    public List<string> captions;
     public UIControl uiControl;
     public PickupObjectFrame frame;
     public bool clickedBall = false;
@@ -13,7 +13,7 @@ public class PickupLivingRoomBaseball : MonoBehaviour
     {
         clickedBall = true;
         frame.canBeClicked = true;
-        script.ShowBaseball3Text();
+        DialogueControl.main.AddCaption(captions);
         Destroy(gameObject);
     }
 }

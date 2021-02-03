@@ -6,11 +6,11 @@ public class InteractWithRadio : MonoBehaviour
 {
     public PickupObjectPuzzlePiece1 puzzle;
     public UIControl uiControl;
-    public DisplayText script;
+    public List<string> captions;
 
     public void InteractRadio()
     {
-        if (Inventory.main.hasBatteries) script.ShowTextRadio();
+        if (Inventory.main.hasBatteries) DialogueControl.main.AddCaption(captions);
         puzzle.canBeClicked = true;
     }
 }

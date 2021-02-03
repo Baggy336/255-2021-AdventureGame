@@ -275,7 +275,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   slidePiece: {fileID: 938406645}
-  script: {fileID: 219745121}
+  captions:
+  - Of course the drawer is locked, where did he put that key?
 --- !u!4 &147265633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3459830895928648758, guid: fb322f524619e5644b62037aba955b4b, type: 3}
@@ -390,17 +391,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b971d13735797a148813af7f6c33960b, type: 3}
---- !u!114 &219745121 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &221600080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -575,17 +565,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ded376b9e5fbcc4cbfb5e25386b4909, type: 3}
---- !u!114 &456187153 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5738048154329665893, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &495395295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 411c6f01ccfbc8440b4fb23378be37a1, type: 3}
@@ -603,7 +582,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe7ca0dffd363934f8b50fa577868bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 1633036904}
+  captions:
+  - '"Here are those batteries!"'
+  - '"Great! Get that radio back up and running so we can get back to our dancing!"'
 --- !u!65 &495395300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1130,17 +1111,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1098494609 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7382262095421728931, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1166770348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1181,29 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.data[0]
+      value: '"Now remember, it''s one, two, three... one, two, three... forward,
+        two, three... back, two, three."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.data[1]
+      value: '"Dad, this is so embarrassing!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.data[2]
+      value: '"You''ll be thanking me one day when you''re the only kid in your class
+        who can dance!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.data[3]
+      value: '"Oh shoot, it sounds like the batteries in that old radio gave out,
+        why don''t you go grab some new ones from the kitchen drawer?"'
+      objectReference: {fileID: 0}
     - target: {fileID: 976567820058695642, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1240,15 +1233,15 @@ PrefabInstance:
     - target: {fileID: 2083337002392007289, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: myText
       value: 
-      objectReference: {fileID: 1206952528}
+      objectReference: {fileID: 0}
     - target: {fileID: 2083337002392007289, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: introText
       value: 
-      objectReference: {fileID: 1906446841}
+      objectReference: {fileID: 0}
     - target: {fileID: 2083337002392007289, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 1206952525}
+      objectReference: {fileID: 0}
     - target: {fileID: 2162580644462731344, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: radio
       value: 
@@ -1256,7 +1249,7 @@ PrefabInstance:
     - target: {fileID: 2162580644462731344, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1098494609}
+      objectReference: {fileID: 0}
     - target: {fileID: 2199063438622408774, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: '"Oh no, looks like the batteries to that old radio finally gave out.
@@ -1282,11 +1275,11 @@ PrefabInstance:
     - target: {fileID: 3536226343811046046, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1906446841}
+      objectReference: {fileID: 0}
     - target: {fileID: 3536226343811046046, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 1623290258}
+      objectReference: {fileID: 0}
     - target: {fileID: 3766135045495721748, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: '"Now remember, it''s one, two, three... one, two, three... forward,
@@ -1301,19 +1294,19 @@ PrefabInstance:
     - target: {fileID: 3947604040213718651, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: myText
       value: 
-      objectReference: {fileID: 1206952524}
+      objectReference: {fileID: 0}
     - target: {fileID: 3947604040213718651, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1206952525}
+      objectReference: {fileID: 0}
     - target: {fileID: 3947604040213718651, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: introText
       value: 
-      objectReference: {fileID: 1906446841}
+      objectReference: {fileID: 0}
     - target: {fileID: 3947604040213718651, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 1206952523}
+      objectReference: {fileID: 0}
     - target: {fileID: 4267900582640702931, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: drawer
       value: 
@@ -1333,15 +1326,15 @@ PrefabInstance:
     - target: {fileID: 5684074134403423757, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: myText
       value: 
-      objectReference: {fileID: 1206952523}
+      objectReference: {fileID: 0}
     - target: {fileID: 5684074134403423757, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1206952524}
+      objectReference: {fileID: 0}
     - target: {fileID: 5738048154329665893, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1906446841}
+      objectReference: {fileID: 0}
     - target: {fileID: 5738048154329665893, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: wardrobe
       value: 
@@ -1349,7 +1342,7 @@ PrefabInstance:
     - target: {fileID: 5738048154329665893, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 1906446841}
+      objectReference: {fileID: 0}
     - target: {fileID: 5961105798599193905, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: '"Ah, here''s that drawer key."
@@ -1466,19 +1459,19 @@ PrefabInstance:
     - target: {fileID: 8090941788446498879, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: myText
       value: 
-      objectReference: {fileID: 1206952525}
+      objectReference: {fileID: 0}
     - target: {fileID: 8090941788446498879, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1206952528}
+      objectReference: {fileID: 0}
     - target: {fileID: 8090941788446498879, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: introText
       value: 
-      objectReference: {fileID: 1906446841}
+      objectReference: {fileID: 0}
     - target: {fileID: 8090941788446498879, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 1206952524}
+      objectReference: {fileID: 0}
     - target: {fileID: 8961373729626985300, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: '"Perfect." "No way, is this really?"
@@ -1491,50 +1484,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
---- !u!114 &1206952523 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3766135045495721748, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1206952524 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 745912295413477688, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1206952525 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1527187481190733324, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1206952528 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2199063438622408774, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1208462302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1753,39 +1702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76fcf30164b55fc45a002dbed5acc211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1623290257 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2162580644462731344, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1623290258 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8961373729626985300, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1633036904 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4267900582640702931, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1706882322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ded376b9e5fbcc4cbfb5e25386b4909, type: 3}
@@ -1816,8 +1732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d60387b0117894eb7b67811d893f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiControl: {fileID: 0}
-  script: {fileID: 456187153}
+  uiControl: {fileID: 1568875281}
 --- !u!1 &1795740044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,17 +1793,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1906446841 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8687931398947220636, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1206952522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2033444866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2447024093837298054, guid: 55b15aed40b37ff419f4ac2001049f0a, type: 3}
@@ -1908,7 +1812,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzle: {fileID: 43373253}
   uiControl: {fileID: 1568875281}
-  script: {fileID: 1623290257}
+  captions:
+  - Woah, what is this behind the radio?
+  - '"Hey dad, I think I found that missing puzzle piece from last year!"'
+  - '"No way! Make sure to grab that so we can finish the puzzle next time."'
 --- !u!65 &2033444868
 BoxCollider:
   m_ObjectHideFlags: 0

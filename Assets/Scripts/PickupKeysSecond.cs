@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickupKeysSecond : MonoBehaviour
 {
     public PickupObjectBaseball ball;
-    public DisplayText script;
+    public List<string> captions;
     public UIControl uiControl;
     public bool hasCarKey = false;
     public bool canBeClicked = false;
@@ -16,7 +16,7 @@ public class PickupKeysSecond : MonoBehaviour
         {
             hasCarKey = true;
             // Tell the inventory the player has the car key
-            script.ShowTextSecondCarKey();
+            DialogueControl.main.AddCaption(captions);
 
             Inventory.main.hasSecondKey = true;
             //Destroy(gameObject);

@@ -6,7 +6,7 @@ public class ClickedOnDad : MonoBehaviour
 {
     public UIControl uiControl;
     public PickupBaseballAgain ball2;
-    public DisplayText throwBall;
+    public List<string> captions;
     public bool clickedDad = false;
 
     public void ThrowBall()
@@ -14,7 +14,7 @@ public class ClickedOnDad : MonoBehaviour
         if (Inventory.main.hasBaseball2)
         {
             clickedDad = true;
-            throwBall.ThrowBallToDad();
+            DialogueControl.main.AddCaption(captions);
         }
         
     }

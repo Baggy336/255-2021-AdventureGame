@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PickupObjectSoup : MonoBehaviour
 {
-    public DisplayText soupText;
+    public List<string> captions;
     public UIControl uiControl;
     public void GrabSoup()
     {
         // Tell the inventory the player has the frame
-        soupText.ShowTextSoup();
+        DialogueControl.main.AddCaption(captions);
         Inventory.main.hasSoup = true;
         //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

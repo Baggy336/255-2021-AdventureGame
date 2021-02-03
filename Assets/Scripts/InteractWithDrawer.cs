@@ -26,14 +26,22 @@ public class InteractWithDrawer : MonoBehaviour
     public GameObject targetPos;
     public AnimationCurve animationCurve;
     public Transform slidePiece;
-    public DisplayText script;
+    public List<string> captions;
 
 
     public void ClickDrawer()
     {
-        isAnimPlaying = true;
-        animPlayheadTime = 0;
-        if (isDrawerLocked) script.ShowTextDrawerLocked();
+        if (isDrawerLocked)
+        {
+            isAnimPlaying = false;
+            DialogueControl.main.AddCaption(captions);
+        }
+        else if (!isDrawerLocked)
+        {
+            isAnimPlaying = true;
+            animPlayheadTime = 0;
+        }
+        
         
     }
     private void Update()
@@ -41,7 +49,7 @@ public class InteractWithDrawer : MonoBehaviour
         
 
         if (Inventory.main.hasWardrobeKey) isDrawerLocked = false;
-            if (isAnimPlaying && isDrawerLocked != true && !hasDrawerBeenOpened)
+            if (isAnimPlaying && !isDrawerLocked && !hasDrawerBeenOpened)
             {
                 animPlayheadTime += Time.deltaTime;
 
@@ -57,7 +65,7 @@ public class InteractWithDrawer : MonoBehaviour
                 
                 if (percent == 1) hasDrawerBeenOpened = true;
 
-        }
+            }
         
         
        

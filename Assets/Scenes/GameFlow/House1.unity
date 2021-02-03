@@ -521,6 +521,7 @@ MonoBehaviour:
   hasDogTags: 0
   hasSecondKey: 0
   hasSoup: 0
+  hasBaseball2: 0
 --- !u!4 &379627355
 Transform:
   m_ObjectHideFlags: 0
@@ -596,6 +597,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -7.2567
       objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.data[0]
+      value: '"The man is in the hospital and all he can think about is wanting "his"
+        lemons and "his" soup."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 969479635603072510, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
+      propertyPath: captions.Array.data[1]
+      value: Sure, sure the water tastes like metal. Never met a more stubborn man.
+      objectReference: {fileID: 0}
     - target: {fileID: 1227808419359810919, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: 'Now, where did he put his car keys?
@@ -613,7 +627,7 @@ PrefabInstance:
     - target: {fileID: 2162580644462731344, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1233213510}
+      objectReference: {fileID: 0}
     - target: {fileID: 2162580644462731344, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: secondKey
       value: 
@@ -639,11 +653,11 @@ PrefabInstance:
     - target: {fileID: 3536226343811046046, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 406408219}
+      objectReference: {fileID: 0}
     - target: {fileID: 3536226343811046046, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 972588849}
+      objectReference: {fileID: 0}
     - target: {fileID: 3766135045495721748, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: '"The man is in the hospital and all he can think of is wanting "HIS"
@@ -659,19 +673,19 @@ PrefabInstance:
     - target: {fileID: 3947604040213718651, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: myText
       value: 
-      objectReference: {fileID: 406408218}
+      objectReference: {fileID: 0}
     - target: {fileID: 3947604040213718651, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: introText
       value: 
-      objectReference: {fileID: 406408219}
+      objectReference: {fileID: 0}
     - target: {fileID: 3947604040213718651, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 406408217}
+      objectReference: {fileID: 0}
     - target: {fileID: 4267900582640702931, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 406408218}
+      objectReference: {fileID: 0}
     - target: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: lemon
       value: 
@@ -679,7 +693,7 @@ PrefabInstance:
     - target: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 1287441347}
+      objectReference: {fileID: 0}
     - target: {fileID: 5101714732864416374, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: soup
       value: 
@@ -687,15 +701,15 @@ PrefabInstance:
     - target: {fileID: 5101714732864416374, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: myText
       value: 
-      objectReference: {fileID: 406408220}
+      objectReference: {fileID: 0}
     - target: {fileID: 5684074134403423757, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: myText
       value: 
-      objectReference: {fileID: 406408217}
+      objectReference: {fileID: 0}
     - target: {fileID: 5684074134403423757, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: nextText
       value: 
-      objectReference: {fileID: 406408218}
+      objectReference: {fileID: 0}
     - target: {fileID: 5961105798599193905, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: 'I''ll just get this to him before he throws a bigger fit to the nurses.
@@ -833,11 +847,11 @@ PrefabInstance:
     - target: {fileID: 8090941788446498879, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: introText
       value: 
-      objectReference: {fileID: 406408219}
+      objectReference: {fileID: 0}
     - target: {fileID: 8778518311344652009, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: previousText
       value: 
-      objectReference: {fileID: 972588849}
+      objectReference: {fileID: 0}
     - target: {fileID: 8961373729626985300, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
       value: '"Just as I thought, on the side table." "Wait, what is this?"
@@ -851,50 +865,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
---- !u!114 &406408217 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3766135045495721748, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &406408218 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 745912295413477688, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &406408219 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8687931398947220636, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &406408220 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2915159274841374263, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &611863526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1614,7 +1584,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabLemon: 0
-  lemonScript: {fileID: 1525509024}
+  captions:
+  - Here it is. Couldn't just be a lemon from the hospital. Better make sure I have
+    his soup.
+  - Now to get back to the hospital before he throws a bigger fit to the nurses.
+    I'll just take his car.
+  - But where did he put his keys?
   key2: {fileID: 1105955526}
 --- !u!135 &833566511
 SphereCollider:
@@ -1721,7 +1696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canGrabBall: 0
   clickedBaseball: 0
-  script: {fileID: 1132897666}
+  script: {fileID: 0}
   uiControl: {fileID: 1063848992}
   key2: {fileID: 1105955526}
 --- !u!135 &870143319
@@ -1737,28 +1712,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.009999999
   m_Center: {x: -0.0000000023283062, y: -0.0000000018626447, z: 0}
---- !u!114 &972588848 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2162580644462731344, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &972588849 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8961373729626985300, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1063848992 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7549116209677839422, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
@@ -2019,7 +1972,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
-  script: {fileID: 972588848}
+  captions:
+  - '"On the nightstand, just as I thought."'
+  - '"Wait, what is this? My old baseball? He kept it after all this time.'
   uiControl: {fileID: 1063848992}
   hasCarKey: 0
   canBeClicked: 0
@@ -2131,17 +2086,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1132897666 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3536226343811046046, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1219544220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2292,28 +2236,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87ea7b20b154c2940ad6c6e40d163c33, type: 3}
---- !u!114 &1233213510 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3318943098425934069, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1287441347 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5961105798599193905, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1327998406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,19 +2345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f405be42f672a4fb81078e89df0318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soupText: {fileID: 2070178319}
+  captions:
+  - '"Here''s his special soup, better make sure I have the lemon."'
   uiControl: {fileID: 1063848992}
---- !u!114 &1525509024 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839196277336733063, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1591402632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3040,17 +2952,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87ea7b20b154c2940ad6c6e40d163c33, type: 3}
---- !u!114 &2070178319 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5101714732864416374, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 406408216}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5edcf1bceadcc14e84d1af998cb5661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2101417063
 PrefabInstance:
   m_ObjectHideFlags: 0

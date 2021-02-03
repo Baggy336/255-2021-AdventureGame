@@ -6,14 +6,15 @@ public class PickupDogTags : MonoBehaviour
 {
     public GiveDogTags giveTags;
     public bool clickedTags;
-    public DisplayText tagScript;
+    public List<string> captions;
     public bool hasTalkedToDad;
+
     public void GrabDogTags()
     {
         if (hasTalkedToDad)
         {
             clickedTags = true;
-            tagScript.ShowTextGrabTags();
+            DialogueControl.main.AddCaption(captions);
             Inventory.main.hasDogTags = true;
             giveTags.hasTags = true;
             Destroy(gameObject);

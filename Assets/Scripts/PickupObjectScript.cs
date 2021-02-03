@@ -17,7 +17,7 @@ public class PickupObjectScript : MonoBehaviour
     private bool isAnimPlaying = false;
 
     public UIControl uiControl;
-    public DisplayText showScript;
+    
     public AnimationCurve animationCurve;
 
     public float getCurrentPercent
