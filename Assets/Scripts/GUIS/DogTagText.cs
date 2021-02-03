@@ -6,21 +6,23 @@ using UnityEngine.UI;
 public class DogTagText : MonoBehaviour
 {
 
-    public Text itemText;
+    public Text uiText;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    public void OnMouseOver()
+    public void OnMouseEnter()
     {
-        itemText.enabled = true;
+        uiText.enabled = true;
     }
 
     public void OnMouseExit()
     {
-        itemText.enabled = false;
+        uiText.enabled = false;
     }
     // Update is called once per frame
     void Update()

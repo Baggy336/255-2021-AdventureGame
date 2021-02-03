@@ -19,6 +19,7 @@ public class GiveDogTags : MonoBehaviour
             DialogueControl.main.AddCaption(captions);
             recievedTags = true;
             keys.canBeClicked = true;
+            Inventory.main.hasDogTags = false;
 
         }
         else

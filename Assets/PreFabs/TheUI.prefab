@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.2637, y: -104.541}
-  m_SizeDelta: {x: 675.4725, y: 97.0821}
+  m_AnchoredPosition: {x: -4, y: -315.00006}
+  m_SizeDelta: {x: 712.9073, y: 143.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &125549782909020718
 CanvasRenderer:
@@ -268,8 +268,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.2637, y: -104.541}
-  m_SizeDelta: {x: 675.4725, y: 97.0821}
+  m_AnchoredPosition: {x: -3.9999924, y: -315}
+  m_SizeDelta: {x: 712.9073, y: 143.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2328196371148834870
 CanvasRenderer:
@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 8421896373719787256}
   - component: {fileID: 3616166658414936568}
   - component: {fileID: 6039004026799617677}
+  - component: {fileID: 1340986743391473349}
   m_Layer: 5
   m_Name: LemonImage
   m_TagString: Untagged
@@ -344,12 +345,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -122.00003, y: 36}
-  m_SizeDelta: {x: -1072.3716, y: -327.5688}
+  m_AnchoredPosition: {x: 337.01, y: 24.645}
+  m_SizeDelta: {x: -1649.7654, y: -878.2105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3616166658414936568
 CanvasRenderer:
@@ -389,6 +390,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &1340986743391473349
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196284686484134565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 179.58171, y: 85.5504, z: 1}
+  m_Center: {x: 0.15750885, y: 0.2075882, z: 0}
 --- !u!1 &4279661239089828402
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +414,8 @@ GameObject:
   - component: {fileID: 6360701785597621536}
   - component: {fileID: 5478817126631228439}
   - component: {fileID: 8690069387000965654}
-  - component: {fileID: 5397849730039827913}
+  - component: {fileID: 2937820999615999464}
+  - component: {fileID: 8693665654079629379}
   m_Layer: 5
   m_Name: DogTagImage
   m_TagString: Untagged
@@ -420,12 +435,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -292.00003, y: 36}
-  m_SizeDelta: {x: -1072.3716, y: -327.5688}
+  m_AnchoredPosition: {x: -676, y: 24.647}
+  m_SizeDelta: {x: -1651.8549, y: -878.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5478817126631228439
 CanvasRenderer:
@@ -465,7 +480,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5397849730039827913
+--- !u!65 &2937820999615999464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4279661239089828402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 180.31409, y: 85.72743, z: 52.34034}
+  m_Center: {x: -0.108428955, y: -0.80353546, z: -3.2483463}
+--- !u!114 &8693665654079629379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -477,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29cdbe0acc827e5488e7db09ffc8cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemText: {fileID: 7868113762634521316}
+  uiText: {fileID: 7868113762634521316}
 --- !u!1 &4618249027104683552
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,8 +540,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.2637, y: -104.541}
-  m_SizeDelta: {x: 675.4725, y: 97.0821}
+  m_AnchoredPosition: {x: -3.9999924, y: -315}
+  m_SizeDelta: {x: 712.9073, y: 143.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8665443862297674070
 CanvasRenderer:
@@ -661,6 +689,7 @@ GameObject:
   - component: {fileID: 3122463636963106848}
   - component: {fileID: 7743377685699500867}
   - component: {fileID: 2258754159961392283}
+  - component: {fileID: 2707530714506829342}
   m_Layer: 5
   m_Name: SoupCanImage
   m_TagString: Untagged
@@ -680,12 +709,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7549116209677839418}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -207, y: 36}
-  m_SizeDelta: {x: -1072.3716, y: -327.5688}
+  m_AnchoredPosition: {x: 648, y: 24.645}
+  m_SizeDelta: {x: -1643.4965, y: -878.2105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7743377685699500867
 CanvasRenderer:
@@ -725,6 +754,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &2707530714506829342
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4767362433952919583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 178.94563, y: 86.110535, z: 5.2113953}
+  m_Center: {x: 0.22103119, y: 0.55844116, z: 0}
 --- !u!1 &5305468551515629619
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,8 +801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.5244, y: 125.7601}
-  m_SizeDelta: {x: 528.9513, y: 56.4798}
+  m_AnchoredPosition: {x: 22.217407, y: 301.877}
+  m_SizeDelta: {x: 941.3861, y: 122.7258}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7524014580294229931
 CanvasRenderer:
@@ -803,7 +845,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Inventory
+  m_Text: 'Inventory
+
+    Press Esc to Exit Inventory'
 --- !u!1 &5588048339418659978
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +859,7 @@ GameObject:
   - component: {fileID: 6225003491749423632}
   - component: {fileID: 1408631928744951633}
   - component: {fileID: 8036913557267949383}
+  - component: {fileID: 6801848661647922868}
   m_Layer: 5
   m_Name: BaseballImage
   m_TagString: Untagged
@@ -838,8 +883,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -41, y: 36}
-  m_SizeDelta: {x: -1072.3716, y: -327.5688}
+  m_AnchoredPosition: {x: -378, y: 24.647}
+  m_SizeDelta: {x: -1645.5862, y: -878.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1408631928744951633
 CanvasRenderer:
@@ -879,6 +924,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &6801848661647922868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5588048339418659978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 181.59164, y: 85.49974, z: 14.057495}
+  m_Center: {x: 0.6266632, y: 0.052986145, z: 0}
 --- !u!1 &6501165919432178655
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,8 +971,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.2637, y: -104.541}
-  m_SizeDelta: {x: 675.4725, y: 97.0821}
+  m_AnchoredPosition: {x: -3.9999924, y: -206.99995}
+  m_SizeDelta: {x: 712.9073, y: 143.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6069038261798992127
 CanvasRenderer:
@@ -957,8 +1015,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: My dad's dog tags from his time in the Army. I never let them leave my
-    sight
+  m_Text: 'Hello
+
+'
 --- !u!1 &7417798268419072444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,9 +1128,9 @@ RectTransform:
   - {fileID: 1460648568600988455}
   - {fileID: 887833949482483290}
   - {fileID: 2141419010138657771}
-  - {fileID: 6360701785597621536}
   - {fileID: 3122463636963106848}
   - {fileID: 8421896373719787256}
+  - {fileID: 6360701785597621536}
   - {fileID: 6225003491749423632}
   - {fileID: 2783682320916567651}
   - {fileID: 6682776653614670996}
@@ -1286,8 +1345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.2637, y: -104.541}
-  m_SizeDelta: {x: 675.4725, y: 97.0821}
+  m_AnchoredPosition: {x: -3.9999924, y: -315}
+  m_SizeDelta: {x: 712.9073, y: 143.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1563003556554981383
 CanvasRenderer:
@@ -1343,6 +1402,7 @@ GameObject:
   - component: {fileID: 2783682320916567651}
   - component: {fileID: 4780207295250150841}
   - component: {fileID: 8184498032201505415}
+  - component: {fileID: 80398766671822992}
   m_Layer: 5
   m_Name: DoorKeyImage
   m_TagString: Untagged
@@ -1366,8 +1426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 40, y: 36}
-  m_SizeDelta: {x: -1072.3716, y: -327.5688}
+  m_AnchoredPosition: {x: -4, y: 24.64801}
+  m_SizeDelta: {x: -1651.8549, y: -878.213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4780207295250150841
 CanvasRenderer:
@@ -1407,3 +1467,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &80398766671822992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027398161224676253}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 180.10413, y: 87.560196, z: 10.017227}
+  m_Center: {x: 0.8532715, y: -0.1317215, z: 0}
