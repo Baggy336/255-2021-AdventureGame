@@ -18,22 +18,75 @@ public class UIControl : MonoBehaviour
 
     public Image blackOutSquare;
     public Image crosshair;
-    public Image inventorySpaceOne;
-    public Image inventorySpaceTwo;
-    public Image inventorySpaceThree;
-    public Image inventorySpaceFour;
-    public Image textBox;
-    public Text text;
-    public Text text1;
+    public Image inventory;
+    public Image dogTags;
+    public Image soupCan;
+    public Image lemon;
+    public Image baseball;
+    public Image doorKey;
+    public Text textBox;
+    public Text inventoryText;
+    public Text dogTagText;
+    public Text soupCanText;
+    public Text lemonText;
+    public Text baseballText;
+    public Text doorKeyText;
+
 
 
     void Start()
     {
+        inventory.enabled = false;
+        inventoryText.enabled = false;
+        dogTags.enabled = false;
+        dogTagText.enabled = false;
+        soupCan.enabled = false;
+        soupCanText.enabled = false;
+        lemon.enabled = false;
+        lemonText.enabled = false;
+        baseball.enabled = false;
+        baseballText.enabled = false;
+        doorKey.enabled = false;
+        doorKeyText.enabled = false;
         FadeOut();
-        
+
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.B) && !inventory.enabled)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            inventory.enabled = true;
+            inventoryText.enabled = true;
+            if (Inventory.main.hasDogTags) dogTags.enabled = true;
+            if (Inventory.main.hasSoup) soupCan.enabled = true;
+            if (Inventory.main.hasDishIngredient) lemon.enabled = true;
+            if (Inventory.main.hasBaseball || Inventory.main.hasBaseball2) baseball.enabled = true;
+            if (Inventory.main.hasRoomKey) doorKey.enabled = true;
+
+           
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && inventory.enabled)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            inventory.enabled = false;
+            inventoryText.enabled = false;
+            dogTags.enabled = false;
+            dogTagText.enabled = false;
+            soupCan.enabled = false;
+            soupCanText.enabled = false;
+            lemon.enabled = false;
+            lemonText.enabled = false;
+            baseball.enabled = false;
+            baseballText.enabled = false;
+            doorKey.enabled = false;
+            doorKeyText.enabled = false;
+        }
+        
         if (isCurrentlyFading)
         {
             if (isFadeIn)
