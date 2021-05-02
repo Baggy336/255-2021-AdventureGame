@@ -832,51 +832,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1536292886 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4279661239089828402, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1862767268}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1536292888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536292886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1536292889}
-          m_TargetAssemblyTypeName: DogTagText, Assembly-CSharp
-          m_MethodName: OnMouseEnter
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &1536292889 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8693665654079629379, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
-  m_PrefabInstance: {fileID: 1862767268}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536292886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29cdbe0acc827e5488e7db09ffc8cf1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1537508573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,7 +1504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8744252059485925306, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -360
+      value: -66
       objectReference: {fileID: 0}
     - target: {fileID: 8961373729626985300, guid: 33e64ca26544efc4988646a73d8556b3, type: 3}
       propertyPath: m_Text
